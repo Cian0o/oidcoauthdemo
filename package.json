@@ -4,7 +4,7 @@
   "description": "Basic Implementation of OIDC & OAuth",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "test": "node index.js"
   },
   "author": "Cian Walker",
   "license": "ISC",

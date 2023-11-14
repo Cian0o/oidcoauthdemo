@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OIDC/OAuth Demo</title>
+</head>
+<body>
+
+<h1>Welcome to the OIDC Demo</h1>
+
+<script>
+    const state = Math.random().toString(36).substring(7);
+    const authorizationUrl = `https://your-authorization-server/authorize?response_type=code&client_id=your-client-id&redirect_uri=https://your-callback-url&scope=openid profile&state=${state}`;
+    const appState = state
+</script>
+
+</body>
+</html>
