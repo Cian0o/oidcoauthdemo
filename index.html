@@ -9,9 +9,15 @@
 <h1>Welcome to the OIDC Demo</h1>
 
 <script>
+
+
     const state = Math.random().toString(36).substring(7);
-    const authorizationUrl = `https://your-authorization-server/authorize?response_type=code&client_id=your-client-id&redirect_uri=https://your-callback-url&scope=openid profile&state=${state}`;
+
     const appState = state
+
+    const authorizationUrl = `https://cian.verify.ibm.com/oauth2/authorize?response_type=code&client_id=34c8389b-6033-4f2a-9c96-8a32214a9065&redirect_uri=http://localhost:8888/callback&scope=openid profile&state=${appState}`;
+
+    window.location.href = authorizationUrl;
 </script>
 
 </body>
