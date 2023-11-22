@@ -1,0 +1,58 @@
+.buttonGreen{
+    /*display: inline-block;*/
+    border-radius: 4px;
+    background-color: #04AA6D;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+    caret-color: #000000;
+    font-weight: bold;
+}
+.buttonGreen span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonGreen span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonGreen:hover span {
+    padding-right: 25px;
+}
+
+.buttonGreen:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.buttonGreen span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonGreen:hover span {
+    padding-right: 20px;
+}
+
+.buttonGreen:hover span:after {
+    opacity: 1;
+    right: 0;
+}
